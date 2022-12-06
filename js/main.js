@@ -61,10 +61,14 @@ function typing(){
 let interval = setInterval(function(){
     typing();
 },200)
-$(".popup_logo").mouseover(function(){
+/*$(".popup_logo").mouseover(function(){
     $("#cover_popup").addClass("display_hidden");
     clearInterval(interval);
-})
+})*/
+setTimeout(() => 
+    $("#cover_popup").addClass("display_hidden")
+    // clearInterval(interval)
+, 3000)
 /* 홈으로 돌아가기 */
 $(".logo_bar img,.logo_bar span").click(function(){
     $("#shelter_type_page").removeClass("shelter_move_in_left");
